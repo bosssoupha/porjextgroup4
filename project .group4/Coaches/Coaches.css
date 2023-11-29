@@ -1,0 +1,137 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Lora:wght@600&family=Noto+Sans+Lao:wght@500&family=Noto+Serif+Lao&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth; 
+font-family: 'Noto Sans Lao', sans-serif;
+font-family: 'Noto Serif Lao', serif;
+
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* nabar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #181733;
+    font-family: 'Ubuntu'sans-serif;
+    z-index: 10;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+.navbar ul li ul{
+    position: absolute;
+    display: none;
+    background-color: #181733;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.navbar ul li:hover ul{
+    display: block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 17px;
+    padding: 0px 16px;
+    display: block;
+}
+.navbar .logo a{
+    color: #ff0000;
+    font-size: 2rem; 
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+.navbar ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+.navbar ul li ul li a{
+    padding: 10px 16px;
+}
+.navbar ul li ul li a:hover{
+    background-color: #46527a;
+    color: #ff0000;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500px;
+    margin-left: 25px;
+}
+
+/* home styling */
+.home{
+    display: flex;
+    background: url(./img/coaches.jpg);
+    height: 904px;
+    min-width: 1280px;
+    font-family: 'Ubuntu'sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-btn:hover{
+    color: #ff0000 !important;
+}
+/* coaches */
+.card-con{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+    padding: 1rem 1rem 0.2rem;
+    background-color: #181733;
+    width: 346px;
+    height: 511px;
+    border-radius: 35px;
+   margin: 0 40px;
+}
+h2{
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+.card img{
+    width: 246px;
+    height: 320px;
+    margin-top: 0px;
+    margin: 30px;
+    display: flex;
+    
+}
+.card p{
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    
+}
+.card :hover{
+    transform: scale(1.1);
+}
